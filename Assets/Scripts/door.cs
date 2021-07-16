@@ -6,7 +6,7 @@ public class door : MonoBehaviour
 {
     public void MoveDown()
     {
-        StartCoroutine(MoveObject(transform.position, transform.position + new Vector3(0,-2.5f,0)));
+        StartCoroutine(MoveObject(transform.position, transform.position - new Vector3(0,2.5f,0)));
     }
 
     private IEnumerator MoveObject(Vector3 origin, Vector3 destination)
