@@ -10,7 +10,6 @@ namespace Valve.VR.InteractionSystem.Sample
     public class ButtonEffect : MonoBehaviour
     {
         public GameObject point;
-        public string tag;
         private bool isEnable = false;
         public void OnButtonDown(Hand fromHand)
         {
@@ -18,15 +17,9 @@ namespace Valve.VR.InteractionSystem.Sample
             fromHand.TriggerHapticPulse(1000);
 
             Debug.Log("Button");
-            Vector3 oldPosition = Player.instance.transform.position;
             if (isEnable)
-            {
-                oldPosition = transform.position;
-                if (this.tag == "samplButton")
-                    transform.position = point.transform.position;
-                else
-                    transform.position = oldPosition;
-            }
+                transform.position = point.transform.position;
+            
         }
 
         public void OnButtonUp(Hand fromHand)
