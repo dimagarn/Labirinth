@@ -13,6 +13,8 @@ namespace Valve.VR.InteractionSystem.Sample
         {
             ColorSelf(Color.cyan);
             fromHand.TriggerHapticPulse(1000);
+            Debug.Log("Button");
+            SceneManager.LoadScene("shooting range");
         }
 
         public void OnButtonUp(Hand fromHand)
