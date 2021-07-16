@@ -179,7 +179,7 @@ namespace Valve.VR.InteractionSystem
 
 				if ( canStick )
 				{
-					StickInTarget( collision, travelledFrames < 2 );
+					Destroy(this.gameObject);
 				}
 
 				// Player Collision Check (self hit)

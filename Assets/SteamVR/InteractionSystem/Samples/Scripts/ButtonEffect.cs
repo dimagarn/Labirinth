@@ -9,12 +9,15 @@ namespace Valve.VR.InteractionSystem.Sample
 {
     public class ButtonEffect : MonoBehaviour
     {
+        public string Scene;
+        private bool isEnable = false;
         public void OnButtonDown(Hand fromHand)
         {
             ColorSelf(Color.cyan);
             fromHand.TriggerHapticPulse(1000);
             Debug.Log("Button");
-            SceneManager.LoadScene("shooting range");
+            if(isEnable)
+                SceneManager.LoadScene(Scene);
         }
 
         public void OnButtonUp(Hand fromHand)
@@ -29,6 +32,11 @@ namespace Valve.VR.InteractionSystem.Sample
             {
                 renderers[rendererIndex].material.color = newColor;
             }
+        }
+
+        public void Enable()
+        {
+            isEnable = !isEnable;
         }
     }
 }
