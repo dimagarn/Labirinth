@@ -18,11 +18,20 @@ namespace Valve.VR.InteractionSystem
 		public bool onceOnly = false;
 		private bool targetEnabled = true;
 		public Material material;
-
+		private void ApplyDamage()
+		{
+			OnDamageTaken();
+		}
+		private void FireExposure()
+		{
+			OnDamageTaken();
+		}
 		private void OnDamageTaken()
 		{
+			Debug.Log("Hitt1");
 			if ( targetEnabled )
 			{
+				
 				onTakeDamage.Invoke();
 				GetComponent<MeshRenderer>().material = material;
 				if ( onceOnly )

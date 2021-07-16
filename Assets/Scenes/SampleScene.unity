@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3300,6 +3300,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &707462773 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4568344318238715821, guid: 6fba972405b98e9459b8493af4d7d4d1, type: 3}
+  m_PrefabInstance: {fileID: 4535976520352822083}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdc6e48706c13fa4a8f807ff0f16e9de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &732912266
 GameObject:
   m_ObjectHideFlags: 0
@@ -5184,6 +5195,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1661175021}
   m_CullTransparentMesh: 1
+--- !u!1 &1670003665 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 107946, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+  m_PrefabInstance: {fileID: 44038817}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1701687970 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4535976519734510049, guid: 6fba972405b98e9459b8493af4d7d4d1, type: 3}
@@ -6175,6 +6191,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 707462773}
+        m_TargetAssemblyTypeName: Valve.VR.InteractionSystem.Sample.ButtonEffect,
+          SteamVR
+        m_MethodName: Enable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   forceStart: 1
   startAngle: -45
   rotateGameObject: 1
@@ -6520,6 +6549,14 @@ PrefabInstance:
     - target: {fileID: 4535976519734510050, guid: 6fba972405b98e9459b8493af4d7d4d1, type: 3}
       propertyPath: m_Name
       value: Hover Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568344318238715821, guid: 6fba972405b98e9459b8493af4d7d4d1, type: 3}
+      propertyPath: men
+      value: 
+      objectReference: {fileID: 1670003665}
+    - target: {fileID: 4568344318238715821, guid: 6fba972405b98e9459b8493af4d7d4d1, type: 3}
+      propertyPath: Scene
+      value: shooting range
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fba972405b98e9459b8493af4d7d4d1, type: 3}

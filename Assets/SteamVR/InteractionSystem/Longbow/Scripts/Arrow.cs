@@ -179,6 +179,7 @@ namespace Valve.VR.InteractionSystem
 
 				if ( canStick )
 				{
+					Debug.Log("Hit");
 					Destroy(this.gameObject);
 				}
 
