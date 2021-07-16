@@ -18,7 +18,7 @@ namespace Valve.VR.InteractionSystem.Sample
 
             Debug.Log("Button");
             if (isEnable)
-                transform.position = point.transform.position;
+                Player.instance.transform.position = point.transform.position;
             
         }
 
